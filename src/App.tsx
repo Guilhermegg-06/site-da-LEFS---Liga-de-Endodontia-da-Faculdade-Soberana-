@@ -3,10 +3,10 @@ function App() {
     <main className="page-shell">
       <header className="topbar">
         <div className="brand">
-          <div className="brand-symbol">🦷</div>
+          <img src="/assets/logo.svg" alt="LAE logo" className="brand-symbol" />
           <div className="brand-text">
-            <span className="brand-name">ENDO EXCELLENCE</span>
-            <span className="brand-subtitle">ENDODONTIA</span>
+            <span className="brand-name logo">ENDO EXCELLENCE</span>
+            <span className="brand-subtitle texto-menor">ENDODONTIA</span>
           </div>
         </div>
         <nav className="nav-menu">
@@ -22,15 +22,15 @@ function App() {
 
       <section className="hero" id="home">
         <div className="hero-copy">
-          <span className="eyebrow">Ciência • Ensino • Extensão</span>
-          <h1>Conectando conhecimento, transformando sorrisos.</h1>
+          <span className="eyebrow texto-menor">Ciência • Ensino • Extensão</span>
+          <h1 className="titulo-principal">Conectando conhecimento, transformando sorrisos.</h1>
           <p>
             A LAE integra teoria, prática e pesquisa para formar profissionais com
             excelência em Endodontia.
           </p>
           <div className="hero-actions">
-            <button className="primary-button">Faça parte da LAE</button>
-            <button className="secondary-button">Nossos eventos</button>
+            <button className="primary-button">Agendar Consulta</button>
+            <button className="secondary-button">Falar no WhatsApp</button>
           </div>
         </div>
 

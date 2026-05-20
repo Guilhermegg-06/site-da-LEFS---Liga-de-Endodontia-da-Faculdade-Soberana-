@@ -1,17 +1,21 @@
 :root {
+  --azul-fundo-principal: #010A1B;
+  --azul-fundo-secundario: #000B1D;
+  --azul-escuro: #010D1F;
+
+  --dourado-principal: #BFA87A;
+  --dourado-medio: #AE9466;
+  --dourado-escuro: #806B4C;
+
+  --branco-titulo: #F5F6F8;
+  --branco-suave: #E9EDF2;
+  --cinza-menu: #C1C5CC;
+
   color-scheme: dark;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  background: #050b19;
-  color: #ffffff;
-  /* cores ajustadas para coincidir com o exemplo enviado */
-  --nav: #071428; /* azul escuro do topo */
-  --bg: #071428;
-  --surface: #081426;
-  --surface-soft: #0b2238;
-  --gold: #d4af37; /* dourado */
-  --text: #f4f4f6;
-  --muted: #c7d3e5;
+  background: var(--azul-fundo-principal);
+  color: var(--branco-suave);
 }
 
 * {
@@ -46,7 +50,7 @@ body {
   padding: 22px 28px;
   border: none;
   border-radius: 0; /* sem bordas arredondadas */
-  background: var(--nav);
+  background: var(--azul-fundo-principal);
   backdrop-filter: none;
   box-shadow: none;
 }
@@ -62,7 +66,7 @@ body {
   height: 56px;
   display: grid;
   place-items: center;
-  background: rgba(212, 175, 55, 0.12);
+  background: transparent;
   border: none;
   font-size: 1.4rem;
 }
@@ -74,11 +78,12 @@ body {
 
 .brand-name {
   display: block;
-  color: #ffffff;
+  color: var(--branco-titulo);
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  font-family: 'Cinzel', serif;
 }
 
 .brand-subtitle {
@@ -97,12 +102,13 @@ body {
 }
 
 .nav-menu a {
-  color: var(--text);
+  color: var(--cinza-menu);
   font-size: 0.95rem;
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 0.08em;
   padding: 6px 4px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .nav-menu a:hover {
@@ -110,8 +116,8 @@ body {
 }
 
 .nav-menu a.active {
-  color: var(--gold);
-  border-bottom: 3px solid var(--gold);
+  color: var(--dourado-principal);
+  border-bottom: 3px solid var(--dourado-principal);
   padding-bottom: 8px;
 }
 
@@ -123,12 +129,13 @@ body {
   border-radius: 0; /* sem bordas arredondadas */
   cursor: pointer;
   font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .cta-button,
 .primary-button {
-  background: linear-gradient(135deg, var(--gold) 0%, #f3d384 100%);
-  color: var(--nav);
+  background: linear-gradient(135deg, var(--dourado-principal) 0%, var(--dourado-medio) 100%);
+  color: var(--azul-fundo-principal);
   padding: 12px 22px;
   border: none;
 }
@@ -199,14 +206,37 @@ body {
   min-height: 280px;
   padding: 28px;
   border-radius: 0; /* sem bordas arredondadas */
-  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
   border: none;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  color: var(--text);
+  color: var(--branco-suave);
   font-weight: 600;
   font-size: 1rem;
+}
+
+/* Tipografia e utilitários solicitados */
+.logo {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.08em;
+  color: var(--dourado-principal);
+}
+
+.titulo-principal {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.04em;
+  color: var(--branco-titulo);
+}
+
+.menu,
+.texto-menor {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--cinza-menu);
+}
+
+.dourado {
+  color: var(--dourado-principal);
 }
 
 .benefits,
