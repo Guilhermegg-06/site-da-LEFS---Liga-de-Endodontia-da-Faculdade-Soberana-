@@ -9,7 +9,7 @@ function App() {
             <span className="brand-subtitle texto-menor">ENDODONTIA</span>
           </div>
         </div>
-        <nav className="nav-menu">
+        <nav className="nav-menu menu">
           <a href="#home" className="active">Home</a>
           <a href="#sobre">Sobre nós</a>
           <a href="#tratamentos">Tratamentos</a>
@@ -22,11 +22,10 @@ function App() {
 
       <section className="hero" id="home">
         <div className="hero-copy">
-          <span className="eyebrow texto-menor">Ciência • Ensino • Extensão</span>
-          <h1 className="titulo-principal">Conectando conhecimento, transformando sorrisos.</h1>
+          <span className="eyebrow texto-menor">ESPECIALISTAS EM</span>
+          <h1 className="titulo-principal">ENDODONTIA</h1>
           <p>
-            A LAE integra teoria, prática e pesquisa para formar profissionais com
-            excelência em Endodontia.
+            Excelência no tratamento de canal com tecnologia e cuidado humanizado.
           </p>
           <div className="hero-actions">
             <button className="primary-button">Agendar Consulta</button>
@@ -36,8 +35,8 @@ function App() {
 
         <div className="hero-panel">
           <div className="hero-card">
-            <p>Por alunos, para alunos, com propósito.</p>
-            <p className="photo-hint">Coloque aqui a imagem de destaque (arquivo: /assets/hero-bg.jpg)</p>
+            <p className="hero-card-label">Imagem de destaque</p>
+            <p className="photo-hint">Substitua /assets/hero-bg.jpg pela foto real.</p>
           </div>
         </div>
       </section>
