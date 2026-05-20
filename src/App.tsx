@@ -3,19 +3,21 @@ function App() {
     <main className="page-shell">
       <header className="topbar">
         <div className="brand">
-          <span className="brand-mark">LAE</span>
-          <div>
-            <p>Liga Acadêmica</p>
-            <p>de Endodontia</p>
+          <div className="brand-symbol">🦷</div>
+          <div className="brand-text">
+            <span className="brand-name">ENDO EXCELLENCE</span>
+            <span className="brand-subtitle">ENDODONTIA</span>
           </div>
         </div>
         <nav className="nav-menu">
           <a href="#home">Home</a>
-          <a href="#sobre">Sobre</a>
-          <a href="#atividades">Atividades</a>
+          <a href="#sobre">Sobre nós</a>
+          <a href="#tratamentos">Tratamentos</a>
+          <a href="#tecnologia">Tecnologia</a>
+          <a href="#antes-depois">Antes e depois</a>
           <a href="#contato">Contato</a>
         </nav>
-        <button className="cta-button">Seja um Ligante</button>
+        <button className="cta-button">Agendar Consulta</button>
       </header>
 
       <section className="hero" id="home">

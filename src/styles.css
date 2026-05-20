@@ -40,44 +40,67 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 18px;
-  padding: 16px 20px;
-  border: 1px solid rgba(212, 175, 55, 0.18);
-  border-radius: 24px;
-  background: rgba(8, 18, 35, 0.88);
-  backdrop-filter: blur(12px);
+  gap: 28px;
+  padding: 22px 28px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 28px;
+  background: rgba(8, 16, 34, 0.94);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.18);
 }
 
 .brand {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
 }
 
-.brand-mark {
-  padding: 16px;
-  border: 1px solid var(--gold);
+.brand-symbol {
+  width: 56px;
+  height: 56px;
   border-radius: 18px;
-  font-weight: 800;
-  color: var(--gold);
+  display: grid;
+  place-items: center;
+  background: rgba(212, 175, 55, 0.16);
+  border: 1px solid rgba(212, 175, 55, 0.24);
+  font-size: 1.4rem;
 }
 
-.brand p {
-  line-height: 1.2;
-  font-size: 0.9rem;
+.brand-text {
+  display: grid;
+  gap: 4px;
+}
+
+.brand-name {
+  display: block;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.brand-subtitle {
+  display: block;
   color: var(--muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 .nav-menu a {
-  color: var(--muted);
+  color: var(--text);
+  font-size: 0.95rem;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 0.08em;
 }
 
 .nav-menu a:hover {
