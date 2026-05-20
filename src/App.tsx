@@ -20,6 +20,8 @@ type IconKind =
 
 const leagueShortName = 'LEFS';
 const leagueName = 'Liga de Endodontia da Faculdade Soberana';
+const heroPhoto = new URL('../IMG_9895.jpg', import.meta.url).href;
+const practicePhoto = new URL('../IMG_9893.jpg', import.meta.url).href;
 
 const activities: Array<{ title: string; description: string; icon: IconKind }> = [
   {
@@ -71,13 +73,6 @@ const gallery = [
     captionA: 'TÉCNICA',
     captionB: 'EVOLUÇÃO',
     tone: 'warm',
-  },
-  {
-    eyebrow: 'Pesquisa',
-    title: 'Ciência aplicada e extensão',
-    captionA: 'ESTUDO',
-    captionB: 'IMPACTO',
-    tone: 'science',
   },
 ];
 
@@ -315,21 +310,24 @@ function App() {
               </div>
             </div>
 
-            <div className="hero-visual reveal is-visible" aria-hidden="true">
+            <div className="hero-visual reveal is-visible">
               <div className="hero-visual-frame">
                 <div className="hero-orbit hero-orbit-one" />
                 <div className="hero-orbit hero-orbit-two" />
+                <div className="hero-photo-layer">
+                  <img src={heroPhoto} alt="Integrante da LEFS em retrato de destaque" />
+                </div>
 
                 <div className="hero-visual-overlay">
-                  <div className="visual-chip">Microscopia</div>
-                  <div className="visual-chip visual-chip-alt">Pesquisa ativa</div>
+                  <div className="visual-chip">Membro em destaque</div>
+                  <div className="visual-chip visual-chip-alt">Presença e identidade</div>
                 </div>
 
                 <div className="hero-visual-logo">
                   <img src="/assets/logo.svg" alt="" />
                   <div>
                     <strong>{leagueShortName}</strong>
-                    <span>Identidade premium pronta para receber a foto principal da capa.</span>
+                    <span>Formação, presença e identidade visual com rosto real da liga.</span>
                   </div>
                 </div>
 
@@ -445,6 +443,20 @@ function App() {
                 </div>
               </article>
             ))}
+
+            <article className="gallery-photo-card reveal" style={{ transitionDelay: '220ms' }}>
+              <div className="gallery-photo-media">
+                <img src={practicePhoto} alt="Modelos dentários usados em prática de Endodontia" />
+              </div>
+              <div className="gallery-photo-copy">
+                <span className="gallery-eyebrow gallery-eyebrow-dark">Laboratório</span>
+                <h3>Prática real com foco em detalhe técnico</h3>
+                <p>
+                  A segunda imagem entrou como registro aplicado da área, reforçando
+                  o lado manual, clínico e minucioso da Endodontia.
+                </p>
+              </div>
+            </article>
           </div>
         </div>
       </section>
