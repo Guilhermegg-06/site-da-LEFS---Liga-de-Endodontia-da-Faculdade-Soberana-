@@ -10,7 +10,7 @@ function App() {
           </div>
         </div>
         <nav className="nav-menu">
-          <a href="#home">Home</a>
+          <a href="#home" className="active">Home</a>
           <a href="#sobre">Sobre nós</a>
           <a href="#tratamentos">Tratamentos</a>
           <a href="#tecnologia">Tecnologia</a>
@@ -37,6 +37,7 @@ function App() {
         <div className="hero-panel">
           <div className="hero-card">
             <p>Por alunos, para alunos, com propósito.</p>
+            <p className="photo-hint">Coloque aqui a imagem de destaque (arquivo: /assets/hero-bg.jpg)</p>
           </div>
         </div>
       </section>
